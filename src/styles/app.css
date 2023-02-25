@@ -1,0 +1,627 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+.bg-dark {
+    background: #1E232B;
+}
+/* ================ header */
+#header{
+    background: rgba(255, 255, 255, 0.05);
+}
+header  input#header-searchbox{
+    background: rgba(0, 0, 0, 0.13);
+    border-radius: 4px;
+    padding-left: 47px;
+}
+.movie-icon-input{
+    width: 25px;
+}
+header #search .icon-search-bar-left{
+    position: absolute;
+    width: 25px;
+    top: 26px;
+    left: 26.2%;
+}
+#menu a{
+    font-family: 'Montserrat', sans-serif, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: #E5E5E5;
+}
+.head nav {
+    width: 100%;
+    height: 66px;
+    left: 1px;
+    background: #292e36;
+}
+
+.head nav a.movie-head img {
+    position: absolute;
+    left: 121px;
+    right: 1206.9px;
+    top: 18px;
+    bottom: 1805px;
+}
+
+nav .searchbar {
+    position: absolute;
+    width: 571px;
+    height: 36px;
+    left: 320px;
+    top: 15px;
+}
+
+.form-control {
+    width: 571px;
+    height: 36px;
+    left: 270px;
+    top: 15px;
+
+    background: rgba(0, 0, 0, 0.13);
+    border-radius: 4px;
+}
+
+.form-control::placeholder {
+    position: absolute;
+    width: 90px;
+    height: 20px;
+    left: 35px;
+    top: 12px;
+    font-family: 'Montserrat', sans-serif, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #E5E5E5;
+}
+
+.container {
+    overflow: hidden;
+}
+
+.movie-head img {
+    position: absolute;
+    left: 121px;
+    right: 1206.9px;
+    top: 18px;
+    bottom: 1805px;
+}
+
+.searchbar {
+    position: absolute;
+    width: 571px;
+    height: 36px;
+    left: 270px;
+    top: 15px;
+}
+
+.searchbar .icon-search-bar-left {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 5px;
+    top: 8px;
+}
+
+.searchbar .icon-search-bar-right {
+    position: absolute;
+    width: 18px;
+    height: 21px;
+    left: 545px;
+    top: 11px;
+}
+
+#navbar-default ul li a {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+
+    text-transform: uppercase;
+}
+
+/* .slider{
+    position: absolute;
+    width: 100%;
+    height: 428px;
+    left: -145px;
+    top: 122px;
+} */
+/* .slider .swiper-wrapper{
+    width: 541.25px;
+    height: 364.61px;
+    left: 430.28px;
+} */
+.slider {
+    position: relative;
+    height: 428px;
+    top: 122px;
+}
+
+.mySwiper {
+    height: 100%;
+}
+
+.swiper-pagination-bullet {
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 6px;
+    width: 12px;
+    height: 12px;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #E74C3C;
+    width: 60px;
+    height: 12px;
+    border-radius: 6px;
+}
+
+/* discover */
+.discover {
+    height: auto;
+    margin-top: 246px;
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 113px;
+}
+
+.discover .title {
+    position: relative;
+    width: 200px;
+    height: 47px;
+    left: 34px;
+}
+
+.discover .title .rectangle {
+    position: absolute;
+    width: 112px;
+    height: 6px;
+    left: 121px;
+    background: #E74C3C;
+}
+
+.discover .title p {
+    position: absolute;
+    width: 200px;
+    height: 29px;
+    left: 120px;
+    top: 20px;
+
+    font-family: 'Montserrat', sans-serif, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #E5E5E5;
+}
+
+.discover .movies-cover {
+    position: relative;
+    height: 803px;
+    left: 150px;
+    top: 94px;
+    width: 1168px;
+}
+
+.discover .movies-cover .card-movies {
+    float: left;
+    width: 205px;
+    height: 383px;
+    margin-right: 25px;
+    margin-bottom: 50px;
+}
+
+.discover .movies-cover .card-movies .group {
+    position: absolute;
+    width: 48px;
+    height: 32px;
+    z-index: 9999;
+}
+
+.discover .movies-cover .card-movies .group .gr-text {
+    position: absolute;
+    width: 27px;
+    height: 22px;
+    left: 187px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #E5E5E5;
+    top: 6px;
+    z-index: 99999;
+}
+
+.discover .movies-cover .card-movies .group .gr-ractangle {
+    position: absolute;
+    width: 48px;
+    height: 32px;
+    left: 172px;
+    background: rgba(30, 35, 43, 0.8);
+}
+
+.disover-sort {
+    position: relative;
+    width: 256px;
+    height: 32px;
+    right: 10px;
+    float: right;
+}
+
+.disover-sort .dis-rectangle {
+    width: 107px;
+    height: 32px;
+    background: #FF0000;
+    border-radius: 32px;
+    color: #E5E5E5;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    padding: 6px 18px;
+}
+
+.discover .movies-cover .card-movies img {
+    position: absolute;
+    width: 217px;
+    min-height: 326px;
+}
+
+.discover .movies-cover .card-movies .title-cover {
+    position: relative;
+    width: 100%;
+    height: 20px;
+    top: 341px;
+    font-family: 'Montserrat', sans-serif, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #E5E5E5;
+}
+
+.discover .movies-cover .card-movies .subtitle-cover {
+    position: relative;
+    width: 35px;
+    height: 17px;
+    top: 350px;
+    font-family: 'Montserrat', sans-serif, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+
+
+    color: #929292;
+}
+
+.card-page-list{
+    left: 0px;
+    top: 389px;
+    background: #292e36;
+}
+.card-page-list .card-title{
+    position: relative;
+    width: 130px;
+    height: 62px;
+    left: 125px;
+    top: 125px;
+}
+.card-page-list .card-title .ractangel{
+    position: relative;
+    width: 112px;
+    height: 6px;
+    background: #E74C3C;
+}
+.card-page-list .card-title h1{
+    position: relative;
+    width: 130px;
+    height: 44px;
+    left: 0;
+    top: 17px;
+    font-family: 'Montserrat', sans-serif, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    color: #E5E5E5;
+}
+.boxs-first{
+    height: 243px;
+}
+.f-filter{
+    clear: both;
+    /* position: relative;
+    left: 110px;
+    margin-right: 0;
+    display: flex; */
+}
+.d-filter{
+    background: linear-gradient(180deg, #0E1723 0%, rgba(30, 35, 42, 0) 100%);
+    border-radius: 8px;
+    padding: 20px 18px;
+    height: auto;
+}
+.text-1{
+    width: 117px;
+    height: 19px;
+    font-family: 'Montserrat', sans-serif, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #E5E5E5;
+    position: relative;
+}
+.lines{
+    height: 0px;
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    margin-top: 11px;
+    position: absolute;
+    width: 100%;
+    left: 0px;
+}
+.dropdown-filter{
+    clear: both;
+    margin-top: 46px;
+    margin-bottom: 36px;
+    max-width: 98px;
+}
+.list-1p{
+    border-top: 1px solid rgba(255, 255, 255, 0.07);
+    left: 170px;
+    position: absolute;
+    width: 314px;
+    content: "";
+    padding: 36px;
+    margin-top: 26px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+}
+.dropdown-filter button{
+    background: rgba(224, 224, 224, 0.13);
+    border-radius: 4px;
+    width: 244px;
+    height: 36px;
+    top: -10px;
+}
+ul.u-dropdown-filter{
+    font-family: 'Montserrat', sans-serif, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    margin-top: 0;
+    width: 245px;
+
+    color: #1E232B;
+}
+.ease-custom {
+    transition-timing-function: cubic-bezier(.61,-0.53,.43,1.43);
+}
+.genred-box{
+    margin-bottom: 20px;
+}
+.genred-box h2{
+    font-family: 'Montserrat', sans-serif, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #E5E5E5;
+}
+.genred-box::after{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+    margin-top: 15px;
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    content: "";
+}
+.box-check label{
+    font-family: 'Montserrat', sans-serif, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    position: relative;
+    left: -7px;
+}
+.box-check input[type="checkbox"]{
+    box-sizing: border-box;
+    background: #E74C3C;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 4px;
+    width: 14px;
+    height: 14px;
+}
+.card-page-list .columns-4 .box-img{
+    width: 200px;
+    height: 229px;
+}
+.card-page-list .columns-4 .box-img img{
+    height: 290px;
+    width: 200px;
+}
+.box-img .group-l{
+    width: 48px;
+    float: right;
+    text-align: center;
+}
+.box-img .group-l .bg-group{
+    position: absolute;
+    width: 48px;
+    height: 32px;
+    background: rgba(30, 35, 43, 0.8);
+}
+.box-img .group-l .bg-group .gr-text{
+    font-family: 'Montserrat', sans-serif, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #E5E5E5;
+}
+.title-cover{
+    font-family: 'Montserrat', sans-serif, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #E5E5E5;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.subtitle-cover{
+    font-family: 'Montserrat', sans-serif, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #929292;
+}
+.f-filter .v-filter{
+    width: 200px;
+}
+
+
+.discover-base{
+    position: absolute;
+    width: 100%;
+    height: 333px;
+    background: rgba(255, 255, 255, 0.05);
+}
+.label-discover{
+    font-family: 'Montserrat', sans-serif, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    color: #E5E5E5;
+}
+.rectangle{
+    position: absolute;
+    width: 112px;
+    height: 6px;
+    left: 176px;
+    top: 647px;
+    background: #E74C3C;
+}
+.box-card img{
+    width: 220px;
+    height: 330px;
+}
+.box-card .text-lg a, .box-card .text-slate-700{
+    font-family: 'Montserrat', sans-serif, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #E5E5E5;
+}
+.bg-red{
+    background-color: #FF0000;
+}
+.btn-radius{
+    border-radius: 32px;
+    font-family: 'Montserrat', sans-serif, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 17px;
+    color: #E5E5E5;
+    padding: 9px;
+    margin-right: 4px;
+}
+.btn-radius.text-base{
+    font-size: 14px;
+}
+.w-192{
+    width: 218px;
+}
+.movie-time .w-192{
+    width: 200px;
+}
+.bg-black{
+    background: rgba(0, 0, 0, 0.2);
+}
+.bx-ractangle{
+    background: rgba(30, 35, 43, 0.8);
+    width: 48px;
+    float: right;
+    font-family: 'Montserrat', sans-serif, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #E5E5E5;
+    padding: 10px;
+}
+.movie-time .discover-base{
+    top: 76px;
+}
+.movie-time .rectangle{
+    top: 124px;
+}
+.bg-detail{
+    background: rgba(0, 0, 0, 0.5);
+    height: 330px;
+}
+/* ========================================= footer ============================================== */
+
+.bg-footer {
+    /* height: 160px; */
+    background: #15191f;
+    clear: both;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .swiper-slide, swiper-slide{
+        width: 100% !important;
+    }
+    .discoveres .flex-wrap{
+        width: 100%;
+    }
+    .box-card img{
+        width: 100%;
+    }
+    .movie-time .max-w-6xl{
+        max-width: 100%;
+        min-width: 100%;
+    }
+    .movie-time .grid-cols-4, .max-w-6xl{
+        width: 100%;
+        display: block;
+    }
+    .d-filter{
+        width: 100%;
+        position: relative;
+        display: block;
+    }
+    .bg-footer .columns-3{
+        width: 100%;
+        columns: 1;
+        display: block;
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+    }
+    .w-\[1186px\], .w-\[582px\]{
+        width: 100%;
+    }
+}
